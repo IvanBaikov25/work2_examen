@@ -23,7 +23,7 @@ namespace work2_examen
         private ObservableCollection<User> allUsers = new ObservableCollection<User>();
         private ObservableCollection<User> filteredUsers = new ObservableCollection<User>();
 
-        // private string connectionString = "server=localhost;user=Ivan;database=CompanyDB;port=3306;password=abcd123456abcd;CharSet=utf8;";
+        private string connectionString = "server=localhost;user=Ivan;database=CompanyDB;port=3306;password=abcd123456abcd;CharSet=utf8;";
 
         public MainWindow()
         {
