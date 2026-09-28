@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|solutionrelative:work2_examen\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|c:\\users\\user\\desktop\\work2_examen\\work2_examen\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|C:\\Users\\User\\Desktop\\work2_examen\\work2_examen\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|solutionrelative:work2_examen\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|C:\\Users\\User\\Desktop\\work2_examen\\work2_examen\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|solutionrelative:work2_examen\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|c:\\users\\user\\desktop\\work2_examen\\work2_examen\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C98F1187-B760-41BD-85B2-A895C714EFD1}|work2_examen\\work2_examen.csproj|solutionrelative:work2_examen\\testcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\work2_examen\\work2_examen\\User.cs",
+              "RelativeDocumentMoniker": "work2_examen\\User.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\work2_examen\\work2_examen\\User.cs",
+              "RelativeToolTip": "work2_examen\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-27T17:58:32.82Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\work2_examen\\work2_examen\\TestContext.cs",
+              "RelativeDocumentMoniker": "work2_examen\\TestContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\work2_examen\\work2_examen\\TestContext.cs",
+              "RelativeToolTip": "work2_examen\\TestContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAB2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-27T18:18:05.091Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -40,7 +75,7 @@
               "RelativeDocumentMoniker": "work2_examen\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\User\\Desktop\\work2_examen\\work2_examen\\MainWindow.xaml.cs",
               "RelativeToolTip": "work2_examen\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwBgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-24T06:22:43.731Z",
               "EditorCaption": ""

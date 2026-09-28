@@ -20,74 +20,33 @@ namespace work2_examen
 {
     public partial class MainWindow : Window
     {
-        private ObservableCollection<User> allUsers = new ObservableCollection<User>();
-        private ObservableCollection<User> filteredUsers = new ObservableCollection<User>();
-
-        // private string connectionString = "server=localhost;user=Ivan;database=CompanyDB;port=3306;password=abcd123456abcd;CharSet=utf8;";
-
         public MainWindow()
         {
             InitializeComponent();
-            LoadDataFromDatabase();
-
-            UsersDataGrid.ItemsSource = filteredUsers;
+            searchButton_Click(null, null);
         }
 
-        private void LoadDataFromDatabase()
+        private void searchButton_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                using (var db = new testContext()) 
                 {
-                    conn.Open();
-                    string query = "SELECT fio, login FROM users";
+                    var lastName = searchBox.Text; 
 
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                    {
-                        using (MySqlDataReader reader = cmd.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                allUsers.Add(new User
-                                {
-                                    Fio = reader.GetString("fio"),
-                                    Login = reader.GetString("login")
-                                });
-                            }
-                        }
-                    }
+                    var users = string.IsNullOrWhiteSpace(lastName)
+                        ? db.Users.ToList()
+                        : db.Users
+                            .Where(x => x.LastName.Contains(lastName)) 
+                            .ToList();
+
+                    userTable.ItemsSource = users; 
                 }
-
-                UpdateFilteredCollection("");
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Ошибка подключения к базе данных:\n{ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show($"Ошибка при работе с базой данных:\n{ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
-        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            string searchText = SearchBox.Text.ToLower();
-            UpdateFilteredCollection(searchText);
-        }
-
-        private void UpdateFilteredCollection(string searchText)
-        {
-            filteredUsers.Clear();
-
-            var filtered = allUsers.Where(u => u.Fio.ToLower().Contains(searchText)).ToList();
-
-            foreach (var user in filtered)
-            {
-                filteredUsers.Add(user);
-            }
-        }
-    }
-
-    public class User
-    {
-        public string Fio { get; set; }
-        public string Login { get; set; }
     }
 }
