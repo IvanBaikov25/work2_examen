@@ -20,17 +20,14 @@ namespace work2_examen
 {
     public partial class MainWindow : Window
     {
-<<<<<<< HEAD
-=======
-        private ObservableCollection<User> allUsers = new ObservableCollection<User>();
-        private ObservableCollection<User> filteredUsers = new ObservableCollection<User>();
-
-        private string connectionString = "server=localhost;user=Ivan;database=CompanyDB;port=3306;password=abcd123456abcd;CharSet=utf8;";
-
->>>>>>> 0045d8762025823388fb806947003bd21259c9cf
         public MainWindow()
         {
             InitializeComponent();
+            if (AppState.CurrentUser != null)
+            {
+                authTextBlock.Text = AppState.CurrentUser.LastName;
+            }
+
             searchButton_Click(null, null);
         }
 
@@ -38,17 +35,17 @@ namespace work2_examen
         {
             try
             {
-                using (var db = new testContext()) 
+                using (var db = new testContext())
                 {
-                    var lastName = searchBox.Text; 
+                    var lastName = searchBox.Text;
 
                     var users = string.IsNullOrWhiteSpace(lastName)
                         ? db.Users.ToList()
                         : db.Users
-                            .Where(x => x.LastName.Contains(lastName)) 
+                            .Where(x => x.LastName.Contains(lastName))
                             .ToList();
 
-                    userTable.ItemsSource = users; 
+                    userTable.ItemsSource = users;
                 }
             }
             catch (Exception ex)

@@ -5,17 +5,21 @@
     <Grid Margin="15">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="15"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal">
+        <TextBlock x:Name="authTextBlock" Grid.Row="0" FontSize="14" HorizontalAlignment="Right"/>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
             <TextBlock Text="Поиск по ФИО:" VerticalAlignment="Center" Margin="0,0,10,0" FontWeight="Bold"/>
             <TextBox x:Name="searchBox" Width="250" VerticalContentAlignment="Center" Margin="0,0,10,0"/>
             <Button x:Name="searchButton" Content="Найти" Width="80" Height="25" Click="searchButton_Click"/>
         </StackPanel>
 
-        <DataGrid x:Name="userTable" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" 
+        <DataGrid x:Name="userTable" Grid.Row="4" AutoGenerateColumns="False" IsReadOnly="True" 
                   CanUserAddRows="False" CanUserDeleteRows="False" HeadersVisibility="Column">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ФИО" Binding="{Binding LastName}" Width="*"/>

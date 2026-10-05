@@ -1,0 +1,31 @@
+﻿<Window x:Class="work2_examen.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Авторизация" Height="271" Width="350"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Вход в систему" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+
+        <StackPanel Grid.Row="2">
+            <TextBlock Text="Логин:" Margin="0,0,0,5"/>
+            <TextBox x:Name="loginTextBox" Height="26" VerticalContentAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4">
+            <TextBlock Text="Пароль:" Margin="0,0,0,5"/>
+            <TextBox x:Name="passwordTextBox" Height="26" VerticalContentAlignment="Center"/>
+        </StackPanel>
+
+        <Button x:Name="authButton" Grid.Row="6" Content="Войти" Height="30" Click="authButton_Click"/>
+    </Grid>
+</Window>

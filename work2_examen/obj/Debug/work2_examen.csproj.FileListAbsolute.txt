@@ -83,3 +83,5 @@ C:\Users\User\Desktop\work2_examen\work2_examen\bin\Debug\Newtonsoft.Json.xml
 C:\Users\User\Desktop\work2_examen\work2_examen\bin\Debug\Pomelo.EntityFrameworkCore.MySql.xml
 C:\Users\User\Desktop\work2_examen\work2_examen\bin\Debug\System.Collections.Immutable.xml
 C:\Users\User\Desktop\work2_examen\work2_examen\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\work2_examen\work2_examen\obj\Debug\AuthWindow.baml
+C:\Users\User\Desktop\work2_examen\work2_examen\obj\Debug\AuthWindow.g.cs
