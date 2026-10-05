@@ -20,6 +20,13 @@ namespace work2_examen
 {
     public partial class MainWindow : Window
     {
+<<<<<<< HEAD
+=======
+        private ObservableCollection<User> allUsers = new ObservableCollection<User>();
+        private ObservableCollection<User> filteredUsers = new ObservableCollection<User>();
+
+        private string connectionString = "server=localhost;user=Ivan;database=CompanyDB;port=3306;password=abcd123456abcd;CharSet=utf8;";
+>>>>>>> 51beca5ae1186399e8969d60578dd4abd21d8616
         public MainWindow()
         {
             InitializeComponent();
